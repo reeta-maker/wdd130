@@ -16,7 +16,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 header,
@@ -31,7 +31,7 @@ header {
     grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 header img {
@@ -106,7 +106,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
 }
 
 .socialmedia a {
@@ -158,4 +159,5 @@ figure {
 figcaption {
     margin-top: 8px;
     font-size: 0.9rem;
+    color: var(--secondary-color);
 }
