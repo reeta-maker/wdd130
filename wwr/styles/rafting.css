@@ -46,14 +46,14 @@ nav ul {
     width: 100%;
 }
 
-nav {
+header nav {
     margin: 16px;
     padding: 8px;
     background-color: var(--primary-color);
     border-radius: 4px;
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -116,10 +116,10 @@ footer {
     background-color: var(--accent1-color);
 }
 
-footer p {
+footer p,
+footer.socialmedia {
     margin: 0 !important;
     padding: 0 !important;
-    color: var(--primary-color) !important;
 }
 
 .socialmedia a {
