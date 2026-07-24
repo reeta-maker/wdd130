@@ -119,6 +119,7 @@ footer {
 footer p {
     margin: 0 !important;
     padding: 0 !important;
+    color: var(--primary-color) !important;
 }
 
 .socialmedia a {
