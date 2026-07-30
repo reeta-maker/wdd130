@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content=" Contact Exciting Expedition for rafting question, reservation, and information about our services.">
+    <meta name="author" content="Reeta Pun">
+    <title>Contact Us | Exciting Expeditions</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/logo.png" alt="Rafting Logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- CENTER TOP: Title and Company Details -->
+        <div class="center-top-header">
+            <h1>Exciting Expedition</h1>
+            <p>Trisuli River Street</p>
+            <p>Trisuli, Nepal</p>
+            <p>+1 222 111 0000</p>
+            <p>info@excitingexpedition.com</p>
+        </div>
+
+        <!-- MAIN TWO-COLUMN LAYOUT (Side-by-Side Map and Form) -->
+        <div class="contact-grid-container">
+
+            <!-- LEFT COLUMN: Just the Map -->
+            <section class="left-column">
+                <div class="map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450425.114144737!2d84.58762158658092!3d28.11766995807943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995204ceea6a129%3A0xe1f5cc8ca30e0b91!2sTrishuli!5e0!3m2!1sen!2sjp!4v1785415040246!5m2!1sen!2sjp"
+                      width="600" height="450" allowfullscreen="" loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- RIGHT COLUMN: Contact Form -->
+            <section class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Placeholder"
+                          required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="user_email" placeholder="Placeholder"
+                          required>
+                    </div>
+
+                    <fieldset class="purpose-group">
+                        <legend>Message Purpose</legend>
+                        <label><input type="radio" name="purpose" value="general" checked> General
+                            Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation
+                            Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion"> Website
+                            Suggestion</label>
+                    </fieldset>
+
+                    <div class="form-group textarea-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="user_message" placeholder="Type here"
+                          required></textarea>
+                    </div>
+
+                    <div class="newsletter-group">
+                        <input type="checkbox" id="newsletter" name="subscribe" value="yes" checked>
+                        <label for="newsletter">Please Subscribe me to the monthly
+                            newsletter</label>
+                    </div>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- BOTTOM ROW: Employees (Square Profile Images) -->
+        <section class="employee-section">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employees">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Head rafting guide">
+                    <figcaption>Minu Shrestha</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Customer service manager">
+                    <figcaption>Otsuka Gurung</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Safety instructor">
+                    <figcaption>Deddy Pun</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>© 2026 Exciting Expeditions | Reeta Pun</p>
+
+        <nav class="socialmedia">
+
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
