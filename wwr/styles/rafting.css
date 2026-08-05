@@ -22,8 +22,9 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: 100%;
     margin: 0 auto;
+    max-width: 840px;
 }
 
 header {
@@ -36,6 +37,7 @@ header {
 
 header img {
     width: 120px;
+    display: block;
 }
 
 nav ul {
@@ -65,15 +67,23 @@ h2 {
     color: var(--primary-color);
 }
 
-p,
-section,
+p {
+    margin: 16px 0;
+}
+
+section {
+    padding: 8px;
+}
+
 article {
-    margin: 16px;
     padding: 8px;
 }
 
 .hero {
     position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .hero img {
@@ -84,12 +94,15 @@ article {
 
 .hero h1 {
     position: absolute;
-    top: 20px;
-    width: 100%;
+    top: 50px;
+    left: 50%;
     padding: 16px;
+    transform: translate(-50%);
+    width: 90%;
     text-align: center;
-    background: rgba(27, 73, 101, .7);
+    background: rgba(27, 73, 101, 0.9);
     color: white;
+    box-sizing: border-box;
 }
 
 .hero article {
@@ -120,6 +133,7 @@ footer p,
 footer .socialmedia {
     margin: 0 !important;
     padding: 0 !important;
+    color: #103046
 }
 
 .socialmedia a {
@@ -136,6 +150,11 @@ footer .socialmedia {
     grid-template-columns: 1fr 200px 1fr;
     align-items: center;
     gap: 20px;
+}
+
+.history p {
+    margin: 0;
+    padding: 0;
 }
 
 .history h2 {
@@ -194,31 +213,45 @@ figcaption {
     font-size: 1.1rem;
 }
 
-/* Two-column side-by-side wrapper for Map and Form */
 .contact-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 30px;
-    margin-bottom: 40px;
 }
 
 .left-column {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    min-height: 480px;
+}
+
+.left-column h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.map {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .map iframe {
     width: 100%;
-    height: 420px;
-    /* Slightly taller to balance the form height */
+    height: 100%;
     border: none;
 }
 
-/* Form container decoration */
 .contact-form {
     background-color: var(--accent2-color);
     padding: 25px;
     border-radius: 4px;
+    box-sizing: border-box;
+    flex: 1;
+    min-height: 480px;
+    width: 100%
 }
 
 .contact-form form {
@@ -227,7 +260,6 @@ figcaption {
     gap: 15px;
 }
 
-/* Form row structure: label on left, input on right */
 .form-group {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -256,7 +288,6 @@ figcaption {
     resize: vertical;
 }
 
-/* Radio button framing and vertical stack */
 .purpose-group {
     border: none;
     padding: 0;
@@ -302,12 +333,10 @@ button[type="submit"] {
     width: 100%;
 }
 
-/* Employee profile card section (Squares) */
 .employee-section {
     margin-top: 50px;
     text-align: center;
     border: 1px solid #ccc;
-    /* Wraps section like the wireframe box */
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -333,10 +362,113 @@ button[type="submit"] {
     height: 150px;
     object-fit: cover;
     border-radius: 0;
-    /* PERFECT SQUARE SHAPE */
     border: 1px solid #ccc;
 }
 
 .employees figcaption {
     margin-top: 12px;
+}
+
+.home-newsletter {
+    background-color: var(--accent2-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.home-newsletter p {
+    color: var(--primary-color);
+}
+
+.home-newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.home-grid div {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.home-grid h2 {
+    margin-top: 15px;
+}
+
+.home-grid p {
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+.cta {
+    text-align: center;
+    padding: 20px;
+}
+
+.cta a {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trip-grid h2 {
+    grid-column: 1/ -1;
+    text-align: center;
+}
+
+.trip-grid article {
+    background-color: var(--accent2-color);
+    padding: 15px;
+}
+
+.trip-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-table {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid var(--primary-color);
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: #103046;
+}
+
+.left-column h2,
+.contact-form h2 {
+    text-align: center;
 }
